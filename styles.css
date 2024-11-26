@@ -1,0 +1,632 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+.all-content{
+  background: white;
+}
+html ::-webkit-scrollbar-track{
+  background: transparent;
+}
+html ::-webkit-scrollbar-thumb{
+  background: #b2744c;
+  border-radius: 10px;
+}
+html ::-webkit-scrollbar{
+  width: 10px;
+}
+
+/* nav bar start */
+#navbar{
+  background-color: #b2744c;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+#logo img{
+  border-radius: 10px;
+  width: 50px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+.navbar-nav{
+  margin-left: 200px;
+}
+.nav-item .nav-link{
+  color: black;
+  margin-left: 40px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+.nav-item .nav-link:hover{
+  background: white;
+  border-radius: 5px;
+  color: black;
+}
+#navbar form button{
+  background: black;
+  color: white;
+  border: 1px solid white;
+}
+/* home section start */
+/* Container link styling */
+.video-link {
+  max-width: 1000px;
+  display: inline-block;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+/* Video styling */
+.styled-video {
+  width: 400px;
+  max-width: 1000px; /* Keeps it responsive */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+/* Hover effect on the video link */
+.video-link:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Additional styling for video controls and play button */
+.styled-video::-webkit-media-controls {
+  opacity: 0.9; /* Light opacity for a subtle look */
+}
+
+.styled-video:hover::-webkit-media-controls {
+  opacity: 1; /* Full opacity on hover */
+}
+
+/* For medium screens (tablets, etc.) */
+@media screen and (max-width: 982px) {
+  .styled-video {
+    width: 400px;
+    max-width: 500px; /* Increase video width for medium-sized screens */
+  }
+}
+
+/* For small screens (phones in portrait mode) */
+@media screen and (max-width: 766px) {
+  .styled-video {
+    width: 4000px;
+    max-width: 400px; /* Make video width even larger for small screens */
+  }
+}
+
+/* For extra small screens (phones in landscape or very small screens) */
+@media screen and (max-width: 480px) {
+  .styled-video {
+   
+    width: 250px;
+    max-width: 300px; /* Full width for mobile screens */
+  }
+}
+
+
+#home{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(images/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 88%;
+}
+#home .content{
+  padding-top: 150px;
+  margin-left: 56px;
+}
+#home .content h3{
+  padding-bottom: 50px;
+  font-size: 50px;
+  color: white;
+}
+#home .content span{
+  font-weight: bold;
+  font-size: 50px;
+  color: lightgreen;
+}
+#home .content p{
+  margin-top: 10px;
+  margin-top: 10px;
+  color: white;
+  font-size: 16px;
+}
+#btn{
+  width: 150px;
+  height: 36px;
+  margin-top: 20px;
+  background: white;
+  border-radius: 5px;
+  background: transparent;
+  border: 2px solid #b2744c;
+  color: #b2744c;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#btn:hover{
+  background: #b2744c;
+  color: white;
+}
+
+
+
+/* about section start */
+#about{
+  width: 100%;
+  height: 120vh;
+
+}
+#about .container{
+  padding-top: 70px;
+}
+.heading{
+  text-align: center;
+  margin-bottom: 50px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+}
+.heading span{
+  color: #b2744c;
+}
+#about .card{
+  border-radius: 10px;
+}
+#about .card img{
+  border-radius: 10px;
+}
+#about-btn{
+  width: 200px;
+  height: 36px;
+  background: transparent;
+  border: 2px solid #b2744c;
+  color: #b2744c;
+  font-weight: bold;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#about-btn:hover{
+  background-color: #b2744c;
+  color: white;
+}
+/* Mission and Vision Section Styling */
+.mission, .vision {
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f7f7f7; /* Light background color */
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.mission h3, .vision h3 {
+  font-size: 1.8rem;
+  color: #333; /* Dark text color */
+  margin-bottom: 10px;
+  border-bottom: 2px solid #e1e1e1; /* Underline for title */
+  padding-bottom: 5px;
+}
+
+.mission p, .vision p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mission:hover, .vision:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width:982px){
+  #about .heading{
+    padding: 30px;
+  }
+
+  #about p{
+    font-size: 8px;
+  }
+
+  .mission, .vision {
+    padding: 15px;
+  }
+
+  .mission h3, .vision h3 {
+    font-size: 8px; /* Smaller heading on medium screens */
+  }
+
+  .mission p, .vision p {
+    font-size: 8px; /* Slightly smaller text for readability */
+  }
+
+  /* Stack the Mission and Vision sections on medium screens */
+  .mission, .vision {
+    margin-top: 20px;
+  }
+  
+}
+@media screen and (max-width:766px){
+  #about .heading{
+    padding: 30px;
+  }
+
+
+  #about p{
+    font-size: 15px;
+  }
+  #about{
+    height: auto;
+  }
+  .mission, .vision {
+    padding: 10px;
+    margin-top: 15px;
+  }
+
+  .mission h3, .vision h3 {
+    font-size: 1.3rem; /* Smaller heading */
+  }
+
+  .mission p, .vision p {
+    font-size: 0.9rem; /* Smaller text for better readability */
+  }
+
+  /* Stack the Mission and Vision side by side on small screens */
+  .mission, .vision {
+    margin-top: 20px;
+    padding: 10px;
+  }
+
+  .mission, .vision {
+    width: 100%; /* Full-width cards on smaller screens */
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  /* Further adjust the layout for extra small screens */
+  .mission h3, .vision h3 {
+    font-size: 1.2rem; /* Even smaller headings */
+  }
+
+  .mission p, .vision p {
+    font-size: 0.85rem; /* Smaller text for small devices */
+  }
+
+  .mission, .vision {
+    padding: 8px;
+  }
+}
+
+
+
+
+/* top card start */
+#top-cards{
+  width: 100%;
+  background: white;
+}
+.heading2{
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.heading2 span{
+  color: #b2744c;
+}
+#top-cards .container{
+  margin-top: 30px;
+}
+#top-cards .card{
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+#top-cards .card img{
+  border-radius: 10px;
+}
+#top-cards .card:hover{
+  transform: translateY(-10px);
+}
+
+
+
+/* top card end */
+#menu{
+  width: 100%;
+  margin-top: 60px;
+  padding-top: 80px;
+}
+.heading3{
+  text-align: center;
+  font-size: 30px;
+  color: #b2744c;
+  font-weight: bold;
+  border-bottom: 2px solid #b2744c;
+}
+#container2{
+  margin-top: 50px;
+}
+#menu .card{
+  box-shadow: rgba(149,157,165,0.2) 0px 8px 24px; 
+}
+.star i{
+  color: #b2744c;
+}
+#mene h3{
+  text-align: center;
+  color: #b2744c;
+  margin-top: 10px;
+  font-size: 25ppx;
+}
+#menu p{
+  font-size: 16px;
+  color: #b2744c;
+  padding-top: 10px;
+}
+#menu p span{
+  float: right;
+  cursor: pointer;
+  
+}
+
+
+
+
+/* product section start */
+#product{
+  width: 100%;
+  padding: 70px;
+}
+.heading4{
+  text-align: center;
+  color: #b2744c;
+  font-size: 30px;
+  padding-top: 70px;
+  font-weight: bold;
+  border-bottom: 2px solid #b2744c;
+}
+#container3{
+  margin-top: 30px;
+}
+#container h3{
+text-align: center;
+color: #b2744c;
+font-size: 23px;
+}
+#product p{
+  color: #b2744c;
+  padding-top: 10px;
+}
+#product p span{
+  float: right;
+  cursor: pointer;
+}
+
+
+
+/* our gallary start */
+#gallary{
+  width: 100%;
+  padding-top: 50px;
+}
+.heading5{
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  margin-top: 60px;
+  font-weight: bold;
+}
+#gallary .heading5 span{
+  color: #b2744c;
+}
+#gallary .card{
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+#gallary .card:hover{
+  transform: translateY(-10px);
+}
+#gallary .card img{
+  border-radius: 10px;
+}
+
+
+
+/* contact start */
+#contact{
+  width: 100%;
+  height: 100vh;
+  padding-top: 70px;
+}
+#contact .container{
+  width: 100%;
+  height: 80vh;
+  background: linear-gradient(90deg, white 80%,);
+  border-radius: 10px;
+}
+.heading6{
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 70px;
+}
+.heading6 span{
+  color: #b2744c;
+}
+#contact p{
+  font-weight: bold;
+  font-size: 13px;
+  color: black;
+}
+#contact input{
+  width: 360px;
+  border: none;
+  border-bottom: 1px solid #b2744c;
+}
+#contact-btn{
+  width: 200px;
+  height: 36px;
+  border: none;
+  background: #b2744c;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  cursor: pointer;
+}
+#col{
+  max-width: 1000px;
+  width: 100pz;
+  height: 100vh;
+  margin-top: 50px;
+}
+#col img{
+  width: 90%;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-width:766px){
+  #contact .container{
+    background: white;
+  }
+  #col{
+    width: 100%;
+    
+
+  }
+  #contact{
+    height: 150vh;
+  }
+  
+}
+@media screen and (max-width:400){
+  #contact input{
+    width: 250px;
+  }
+  
+}
+
+
+
+
+/* blog start */
+#blogs{
+  width: 100%;
+  padding-top: 70px;
+}
+#blogs .heading7{
+  padding-top: 200px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  font-weight: bold;
+}
+#blogs .heading7 span{
+  color: #b2744c;
+}
+#blogs .container{
+  margin-top: 40px;
+}
+#blogs .card{
+  padding-bottom: 20px;
+}
+#blogs h5{
+  color: #b2744c;
+}
+#blogs h3{
+  padding-top: 5px;
+}
+#blogs img{
+  border-radius: 4px;
+}
+#blogs p{
+  text-align: center;
+  text-align: justify;
+  pad: 7px;
+}
+.button-container {
+  padding-top: 14px;
+  text-align: center;
+}
+#blog-btn {
+  border-radius: 8px;
+  width: 150px;
+  height: 36px;
+  border: none;
+  color: white;
+  background: #b2744c;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+#blog-btn:hover {
+  background: #a4633e; /* Darker shade for hover */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds a shadow for depth */
+}
+
+
+
+
+/* footer start */
+#footer {
+  margin-top: 30px;
+  background-color: #b2744c;
+  color: #f1f1f1;
+  padding: 20px 0;
+  font-family: Arial, sans-serif;
+  position: relative; /* Enable positioning for the arrow */
+}
+
+#footer .social-links {
+  margin-bottom: 15px;
+}
+
+#footer .social-links i {
+  color: #f1f1f1;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+#footer .social-links i:hover {
+  color: green; /* Gold color for hover effect */
+}
+
+#footer .copyright {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+#footer .copyright strong {
+  color: lightgreen; /* Gold color for brand name */
+}
+#footer .copyright span {
+  font-weight: bold;
+}
+
+/* Arrow button styling */
+.arrow {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+
